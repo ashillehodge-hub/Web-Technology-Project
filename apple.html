@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>The Apple Store</title>
+    <style>
+        .store-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 50px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .product {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .product img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+        h3 { color: wheat; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">The Hub</a>
+        <a href="apple.html">The Apple Store</a>
+        <a href="resume.html">My Resume</a>
+    </nav>
+
+    <h1 style="text-align:center; margin-top: 30px; color: wheat;">Shop Premium Products</h1>
+
+    <div class="store-grid">
+        <div class="glass-card product interactive-element">
+            <img src="iphone.jpg" alt="iPhone 17 Pro Max">
+            <h3>iPhone 17 Pro Max</h3>
+            <p>$1199</p>
+        </div>
+
+        <div class="glass-card product interactive-element">
+            <img src="macbook.jpg" alt="MacBook Air M5">
+            <h3>MacBook Air (M5)</h3>
+            <p>$1299</p>
+        </div>
+
+        <div class="glass-card product interactive-element">
+            <img src="ipad.jpg" alt="iPad Pro M4">
+            <h3>iPad Pro (M4)</h3>
+            <p>$999</p>
+        </div>
+    </div>
+</body>
+</html>
